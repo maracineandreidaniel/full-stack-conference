@@ -1,0 +1,301 @@
+body{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:#faf6ed ;
+}
+
+fieldset{
+    border: 0px;
+}
+
+nav{
+    background-image: linear-gradient(to right,#c64b6a,#cf9064);
+    color: white;
+}
+
+ nav p{
+    margin-left: 40px;
+    margin-bottom: 3px;
+}
+
+nav h1{
+    margin-top: 3px;
+    margin-left: 40px;
+}
+
+.basicInfo .simpleText, .basicInfo .simpleList{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.basicInfo input, .basicInfo select{
+    height: 30px;
+}
+
+.tShirtInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 30px 60px;
+    grid-template-areas: "tsTitle tsTitle" "size design" "colour colour";
+    row-gap: 30px;
+}
+
+.tShirtInfo .simpleList{
+    width: 120px;
+    height: 60px;
+}
+
+.tShirtInfo select{
+    height: 36px;
+}
+
+
+
+.tShirtInfo h1{
+    grid-area: tsTitle;
+}
+
+.colour{
+    grid-area: colour;
+}
+
+.size{
+    grid-area: size;
+}
+
+.design{
+    grid-area:design;
+}
+
+.registerActivity{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: white;
+    margin-top: 30px;
+    border: solid 1px black;
+    grid-template-areas: " mainDiv img" "date money";
+    position: relative;
+    height: 90px;
+}
+
+.registerActivity div{
+    grid-area: mainDiv;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.registerActivity img{
+    grid-area: img;
+    
+}
+
+.registerActivity .date{
+    grid-area: date;
+    text-align: center;
+}
+
+.registerActivity .money{
+    grid-area: money;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.registerActivity img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+.total{
+    margin-left: 20px;
+}
+
+.paymentInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+
+.paymentInfo .simpleText, .paymentInfo .simpleList{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.paymentInfo input, .paymentInfo select{
+    height: 30px;
+}
+
+.cardType{
+    background-color: white;
+    border: solid 1px black;
+    margin-bottom: 50px;
+    height: 120px;
+    overflow: scroll;
+}
+
+.cardType h3,.cardType p{
+    margin-left: 10px;
+}
+
+button{
+    width:80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #ce5169  ;
+    border: 0px;
+}
+
+@media(min-width:720px){
+   .basicInfo{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 100px 100px 100px 100px;
+       column-gap: 30px;
+        grid-template-areas:"basicTitle tInfo" "name tInfo" "email tInfo" "job other" ;
+   }
+
+   .basicTitle{
+       grid-area: basicTitle;
+   }
+
+   .tShirtInfo{
+       grid-area: tInfo;
+       grid-template-columns: 1fr 2fr;
+       grid-template-rows: 70px 70px 70px;
+       grid-template-areas: "tsTitle tsTitle" "size design" "colour colour";
+   }
+
+   
+
+   
+
+   .userName{
+       grid-area: name;
+   }
+
+   .userEmail{
+       grid-area: email;
+   }
+
+   .userJob{
+       grid-area: job;
+   }
+
+   .userOtherJob{
+        grid-area: other;
+        margin-top: 17px;
+        height: 30px;
+   }
+
+
+
+   .registerActivities{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 100px 100px 100px 100px 100px;
+       grid-template-areas: "regTitle regTitle" "main main" " lib node" "jsws build" "npm exp";
+       column-gap: 20px;
+   }
+
+   .registerTitle{
+    grid-area: regTitle;
+   }
+
+
+.mainjs{
+    grid-area: main;
+}
+
+.jsLib{
+    grid-area: lib;
+}
+
+.nodeWS{
+    grid-area: node;
+}
+
+.jsWS{
+    grid-area: jsws;
+}
+
+.buildTools{
+    grid-area: build;
+}
+
+.npmWS{
+    grid-area: npm;
+}
+
+.expWS{
+    grid-area: exp;
+}
+
+.total{
+    text-align: end;
+}
+
+
+.paymentInfo{
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas: "payTitle payTitle payTitle" "payMeth expd expy" "nr zip cvv" "paypal paypal paypal" "bitc bitc bitc";
+    column-gap: 70px;
+    margin-bottom: 100px;
+}
+
+.payTitle{
+    grid-area: payTitle;
+}
+
+.payMethod{
+    grid-area: payMeth;
+}
+
+.expDate{
+    grid-area: expd;
+}
+
+.expYear{
+    grid-area: expy;
+}
+
+.cardNr{
+    grid-area: nr;
+}
+
+.zip{
+    grid-area: zip;
+}
+
+.cvv{
+    grid-area: cvv;
+}
+
+
+.payPal{
+    grid-area: paypal;
+}
+
+.bitcoin{
+    margin-top: 50px;
+    grid-area: bitc;
+}
+
+button{
+    width: 120px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+
+}

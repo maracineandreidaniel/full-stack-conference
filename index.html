@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Conference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <p>Register for</p>
+        <h1>Full Stack Conference</h1>
+    </nav>
+
+    <main>
+
+        <form action="/">
+
+        <fieldset class="basicInfo">
+
+            <h2 class="basicTitle">Basic Info:</h2>
+
+            <section class="simpleText userName">
+                <label for="name">Name: *</label>
+                <input type="text" name="user_name" id="name">
+            </section>
+
+            <section class="simpleText userEmail">
+                <label for="email">Email Adress:</label>
+                <input type="email" name="user_email" id="email">
+            </section>
+
+
+            <section class="simpleList userJob">
+                <label for="jobRole">Job Role:</label>
+                <select name="user_jobRole" id="jobRole">
+
+                    <option value="programator">Programator</option>
+                    <option value="gunoier">Gunoier</option>
+                    <option value="medic">Medic</option>
+
+                </select>
+
+            </section>
+
+
+            <section class="simpleText userOtherJob">
+                <input type="text" id="otherJobRole" name="user_other_jobRole">
+            </section>
+
+
+            <fieldset class="tShirtInfo">
+
+                <h2>T-Shirt Info</h2>
+    
+                <section class="simpleList size">
+                    <label for="size">Size:</label>
+    
+                    <select name="shirt_size" id="size">
+                        <option value="M">M</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="L">L</option>
+    
+                    </select>
+                </section>
+    
+    
+                <section class="simpleList design">
+    
+                    <label for="shirt_design">Design:</label>
+                    <select name="shirt_design" id="shirtDesign">
+                        <option value="dsg1">Design 1</option>
+                        <option value="dsg2">Design 2</option>
+                        <option value="dsg3">Design 3</option>
+                    </select>
+    
+                </section>
+    
+    
+                <section class="simpleList colour">
+                    <label for="shirt_colour">Colour:</label>
+                    <select name="shirt_colour" id="shirtColour">
+    
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </section>
+    
+    
+            </fieldset>
+
+
+
+        </fieldset>
+
+
+
+
+        
+
+
+        
+        <fieldset class="registerActivities">
+
+
+            <h2 class="registerTitle">Register Activities</h2>
+
+
+
+            <section class="registerActivity mainjs">
+                <div>
+                    <input type="radio" name="main_conference" id="mainConference">
+                    <label for="mainConference" class="mainConference ">Main Conference</label><br>
+                </div>
+                <img src="images/js.png" alt="mainConference">
+                <p class="money">$200</p>
+            </section>
+
+
+            <section class="registerActivity jsLib">
+                <div>
+                    <input type="radio" name="js_libraries" id="jsLibraries">
+                    <label for="js_libraries" class="jsLibraries">JavaScript Libraries Workshop</label>
+                </div>
+                <img src="images/react.png" alt="react">
+                <p class="date">Tuesday 9AM-12PM</p>
+                <p class="money">$100</p>
+            </section>
+
+            <section class="registerActivity nodeWS">
+                <div>
+                    <input type="radio" name="nodejs" id="nodeJs">
+                    <label for="node_js" class="nodeJs">Node.js Workshop</label>
+                </div>
+                <img src="images/node.png" alt="nodejs">
+                <p class="date">Tuesdy 1pm-4pm</p>
+                <p class="money">$100</p>
+            </section>
+
+
+            <section class="registerActivity jsWS">
+                <div>
+                    <input type="radio" name="js_frameworks" id="jsFrameworks" >
+                    <label for="js_frameworks" class="jsFrameworks">JavaScript Frameworks Workshop </label>
+                </div>
+                <img src="images/angular.png" alt="jsFrameworks">
+                <p class="date">Tuesdy 9am-12pm</p>
+                <p class="money">$100</p>
+            </section>
+
+
+            <section class="registerActivity buildTools">
+                <div>
+                    <input type="radio" name="build_tools" id="buildTools">
+                    <label for="build_tools" class="buildTools"> Build Tools Workshop: </label>
+                </div>
+                <img src="images/build.png" alt="buildTools">
+                <p class="date">Tuesday 1pm-4pm</p>
+                <p class="money">$100</p>
+            </section>
+
+
+            <section class="registerActivity npmWS">
+                <div>
+                    <input type="radio" name="npmWorkshop" id="npmWorkshop">
+                    <label for="npm_workshop" class="npmWorkshop">NPM Workshop</label>
+                </div>
+                <img src="images/npm.png" alt="npm">
+                <p class="date">Wednesday 9am-12pm</p>
+                <p class="money">$100</p>
+            </section>
+
+
+
+            <section class="registerActivity expWS">
+                <div>
+                    <input type="radio" name="express" id="express">
+                    <label for="express_workshop" class="express">Express Workshop</label>
+                </div>
+                <img src="images/ex.png" alt="">
+                <p class="date">Wednesday 1pm-4pm</p>
+                <p class="money">$100</p>
+            </section>
+        </fieldset>
+
+        <h2 class="total">Total:</h2>
+
+        <fieldset class="paymentInfo">
+
+            <h2 class="payTitle">Payment Info</h2>
+
+            <section class="simpleList payMethod">
+                <label for="payWith">I'm going to pay with:</label>
+                <select name="payment_method" id="payMethod">
+
+                    <option value="method_1">Method 1</option>
+                    <option value="method_2">Method 2</option>
+                    <option value="method_3">Method 3</option>
+
+                </select>
+            </section>
+
+            <section class="simpleList expDate">
+                <label for="expDate">Expiration Date:</label>
+                <select name="expiration_date" id="expDate">
+
+                    <option value="val_1">1</option>
+                    <option value="val_2">2</option>
+                    <option value="val_3">3</option>
+                    <option value="val_4">4</option>
+                    <option value="val_5">5</option>
+                    <option value="val_6">6</option>
+                    <option value="val_7">7</option>
+                    <option value="val_8">8</option>
+                    <option value="val_9">9</option>
+                    <option value="val_10">10</option>
+
+
+                </select>
+
+            </section>
+
+
+
+            <section class="simpleList expYear">
+                <label for="expYear">Expiration Year:</label>
+                <select name="expiration_year" id="expYear">
+                    <option value="val_2000">2000</option>
+                    <option value="val_2001">2001</option>
+                    <option value="val_2002">2002</option>
+                    <option value="val_2003">2003</option>
+                    <option value="val_2004">2004</option>
+                </select>
+            </section>
+
+
+            <section class="simpleText cardNr">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" name="card_number" id="cardNumber">
+            </section>
+
+
+            <section class="simpleText zip">
+                <label for="zipCode">Zip Code:</label>
+                <input type="text" name="zip_code" id="zipCode">
+            </section>
+
+
+            <section class="simpleText cvv">
+                <label for="cvv">CVV:</label>
+                <input type="text" name="cvv" id="cvv">
+            </section>
+            
+
+            <section class="payPal cardType ">
+                <h3>PayPal</h3>
+                <p>If you selected the PayPal option we ll take you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, impedit nihil. Unde commodi tempora ipsum sit, eos reprehenderit totam hic?
+                 </p>
+            </section>
+
+            <section class="bitcoin cardType">
+                <h3>Bitcoin</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, esse quisquam nostrum,  omnis odio possimus
+                </p>
+            </section>
+
+        </fieldset>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    </main>
+
+
+</body>
+</html>
